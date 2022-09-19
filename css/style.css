@@ -15,6 +15,11 @@
     margin: auto;
 }
 
+.container_xsm{
+    width: 40%;
+    margin: auto;
+}
+
 :root{
     --primary: #9793e5;
     --secondary: #0084fd;
@@ -164,8 +169,30 @@ header nav{
     line-height: 5vh;
 }
 
+.background_primary_action{
+    background-color: var(--primary);   
+    margin-top: 5vh ;
+}
+
 /* #endregion MAIN */
 
+/* #region FOOTER */
+ footer{
+    background-color: var(--dark);
+    padding: 5vh 0;
+    text-align: center;
+    color: white;
+ }
+
+ footer a{
+    color: var(--primary);
+    text-decoration: none;
+ }
+
+ a:hover{
+    text-decoration: underline;
+ }
+/* #endregion FOOTER */
 /* #region DIVISIONI IN COLONNA */
      .col_1{
         width: calc(100% / 12 * 1);
