@@ -1,0 +1,59 @@
+/* #region ASSETS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+:root{
+    --primary: #9793e5;
+    --secondary: #0084fd;
+    --secondary-soft: #b4ddfe;
+    --accent: #fdc15f;
+    --darker: #000;
+    --dark: #323332;
+    --light: #fffefe;
+}
+
+/* #endregion ASSETS */
+
+/* #region DEBUG */
+
+     /* .debug header{
+        height: 60px;
+     } */
+
+/* #endregion DEBUG */
+
+
+header{
+    background-color: var(--secondary);
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo{
+    height: 5vh;
+}
+
+.get_started{
+    color: var(--darker);
+    background-color: var(--light);
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid var(--light);
+}
+
+.main_menu{
+    display: inline-block;
+}
