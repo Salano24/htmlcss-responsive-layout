@@ -86,6 +86,7 @@ header nav{
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
+    font-size: 0.6rem;
 }
 
 .logo{
@@ -98,6 +99,7 @@ header nav{
     padding: 0.5rem 0.8rem;
     border-radius: 1rem;
     border: 1px solid var(--light);
+    font-size: 0.6rem;
 }
 
 .main_menu{
@@ -120,6 +122,7 @@ header nav{
     line-height: 4vh;
     font-weight: bold;
     color: #657b8e;
+    font-size: 0.8rem;
 }
 
 .demo h2{
@@ -157,7 +160,7 @@ header nav{
 .demo .col_8, .demo .col_3_plus{
     background-color: var(--secondary-soft);
     border-radius: 1rem;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
 
 }
 
@@ -474,7 +477,7 @@ header nav{
      }
 
      .col_8{
-        width: calc(100% / 12 * 8);
+        width: calc(100% / 12 * 8 - 1vw);
      }
 
      .col_9{
@@ -513,11 +516,154 @@ header nav{
     }
 
     .container_tablet{
-        width: 90%;
+        width: 95%;
         margin: auto;
     }
 
+    .demo_application{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .demo_application img{
+        width: 35%;
+    }
+
+    .planning img{
+        width: 100%;
+    }
+
+    .col_12_tablet{
+        width: calc(100% / 12 * 12);
+    }
+
+    .planning h2{
+        font-size: 3rem;
+    }
+
+    .background_white{
+        margin-top: 0;
+    }
+
+    .col_5_tablet{
+       width: calc(100% / 12 * 5 + 5vw);
+       
+    }
+
+    .benefits .row{
+        justify-content: space-around;
+    }
+
+    .about_us{
+        margin-top: 5vh;
+    }
+
+    .about_us p{
+        font-size: 1rem;
+    }
+    .about_img p{
+     font-size: 1.5rem;
+    }
+
+    .call_to_action span{
+        font-size:1.5rem ;
+    }
+
+    .call_to_action h3{
+        font-size:3rem ;
+        margin-top: 5vh;
+    }
+    .call_to_action h2{
+        font-size:5rem ;
+        margin-top: 8vh;
+    }
+    .call_to_action p{
+        font-size:1rem ;
+        margin-top: 8vh;
+    }
+    .call_to_action button{
+        font-size:1rem ;
+
+    }
+
+    .call_to_action .copyright{
+        font-size:0.8rem ;
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+
 }
+
+@media screen and (max-width: 425px){
+   
+   .container_tablet{
+    width: 90%;
+    margin: auto;
+   }
+    .demo_application{
+    text-align: center;
+    width: 100%;
+   }
+
+   .demo_application img{
+    margin-left: 28vw;
+   }
+
+   .clean_code{
+    width:100% ;
+    margin: auto;
+   }
+
+   .card img{
+    display: block;
+    border-radius: 9rem;
+    padding:5vh 10vw ;
+   }
+
+   .testo_partner{
+    padding-left: 20vw;
+    text-align: center;
+   }
+
+   .card p{
+    padding-top: 0;
+   }
+
+    .card{
+    padding-bottom: 3vh;
+   }
+
+   .col_12_tablet{
+    width: 90% ;
+    margin: auto;
+    margin-bottom: 5vh;
+
+   }
+
+   .card_white h2{
+    padding-bottom: 0;
+   }
+
+   .card_white p, .card_white button{
+    font-size: 0.8rem;
+   }
+
+   .about_img img{
+    height: 35vh;
+   }
+
+   .about_text h2{
+    padding-top: 5vh;
+   }
+
+   .call_to_action h3{
+    font-size: 2.5rem;
+    line-height: 8vh;
+   }
+}
+
 
 
 /* #endregion RESPONSIVE */
