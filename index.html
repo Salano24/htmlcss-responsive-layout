@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Lorem demo</title>
 </head>
 <body class="debug">
     <header>
-        <nav class="container">
+        <nav class="container container_tablet container_mobile">
             <img src="./img/logo.png" alt="" class="logo">
             <div class="main_menu">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span>Planning</span>
+                <span>Testimonials</span>
+                <span>Features</span>
+                <span>About Us</span>
                 <button class="get_started">Get Started</button>
+            </div>
+            <div class="mobile_nav">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
     </header>
@@ -25,19 +32,55 @@
     <main>
         <section class="demo container">
             <div class="row">
-                <div class="col_8"></div>
-                <div class="col_3_plus"></div>
-                <div class="col_3_plus"></div>
-                <div class="col_3_plus"></div>
-                <div class="col_3_plus"></div>
+                <div class="col_8 demo_application">
+                    <div class="demo_text">
+                        <h2>Get a demo application</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestiae atque laborum adipisci unde quasi corrupti odit minus assumenda repellat.</p>
+                        <button> <i class="fa-brands fa-apple"></i> App Store</button>
+                    </div>
+                    <img src="./img/phone.png" alt="">
+                </div>
+
+                <div class="col_3_plus clean_code">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>Clean Code</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iste quos est voluptates natus ducimus animi alias earum magnam.</p>
+                </div>
+
+                <div class="col_3_plus clean_code">
+                    <i class="fa-solid fa-compass-drafting"></i>                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iste quos est voluptates natus ducimus animi alias earum magnam.</p>
+                </div>
+
+                <div class="col_3_plus clean_code">
+                    <i class="fa-solid fa-laptop-code"></i>                    <h2>Developement</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iste quos est voluptates natus ducimus animi alias earum magnam.</p>
+                </div>
+
+                <div class="col_3_plus clean_code">
+                    <i class="fa-solid fa-bullhorn"></i>                    <h2>Branding</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iste quos est voluptates natus ducimus animi alias earum magnam.</p>
+                </div>
+             
             </div>
         </section>
 
     <div class="background_primary">
         <section class="planning container_sm">
             <div class="row">
-                <div class="col_6"></div>
-                <div class="col_6"></div>
+                <div class="col_6">
+                    <img src="./img/planning1.png" alt="">
+                    <h2>Strategic Planning</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis molestias aliquam vero quia odio voluptatibus nobis itaque expedita amet dolorem!</p>
+                </div>
+                
+                <div class="col_5 background_white">
+                    <img src="./img/planning2.png" alt="">
+                    <h3>App Developement</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur quas excepturi a sed maiores ex </p>
+                    <button><i class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                
             </div>
         </section>
     </div>
@@ -47,16 +90,27 @@
             <h3>We are committed expert partners</h3>
             <p>We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.</p>
             <div class="card row">
-                <div class="col_3 foto_partner"></div>
-                <div class="col_9 testo_partner"></div>
+                <div class="col_3 foto_partner">
+                    <img src="./img/testimonial1.jpg" alt="">
+                </div>
+                <div class="col_9 testo_partner">
+                    <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ad, eligendi ducimus voluptate odit libero cumque maiores iure ullam voluptatum"</p>
+                    <span class="name">NAT REYNOLDS</span>
+               </div>
             </div>
             <div class="card row">
-                <div class="col_3 foto_partner"></div>
-                <div class="col_9 testo_partner"></div>
+                <div class="col_3 foto_partner"><img src="./img/testimonial2.jpg" alt=""></div>
+                <div class="col_9 testo_partner">
+                    <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ad, eligendi ducimus voluptate odit libero cumque maiores iure ullam voluptatum"</p>
+                    <span class="name">CELIA ALMEDA</span>
+                </div>
             </div>
             <div class="card row">
-                <div class="col_3 foto_partner"></div>
-                <div class="col_9 testo_partner"></div>
+                <div class="col_3 foto_partner"><img src="./img/testimonial3.jpg" alt=""></div>
+                <div class="col_9 testo_partner">
+                    <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ad, eligendi ducimus voluptate odit libero cumque maiores iure ullam voluptatum"</p>
+                    <span class="name">BOB ROBERTS</span>
+                </div>
             </div>
         </section>
 
@@ -64,53 +118,49 @@
             <section class="benefits container">
                 <h2>Benefits of working with us</h2>
                 <div class="row">
-                    <div class="col_3_plus ">
-                        <h2></h2>
-                        <h3></h3>
-                        <span></span>
-                        <p></p>
-                        <button></button>
+                    <div class="col_3_plus card_white ">
+                        <h2>01</h2>
+                        <h3>Hight Quality</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quam temporibus, modi qui rerum vero obcaecati provident, nisi ea molestiae unde quae libero veritatis a!</p>
+                        <button>more</button>
                     </div>
 
-                    <div class="col_3_plus ">
-                        <h2></h2>
-                        <h3></h3>
-                        <span></span>
-                        <p></p>
-                        <button></button>
+                    <div class="col_3_plus card_white ">
+                        <h2>02</h2>
+                        <h3>Creative Team</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quam temporibus, modi qui rerum vero obcaecati provident, nisi ea molestiae unde quae libero veritatis a!</p>
+                        <button>more</button>
                     </div>
 
-                    <div class="col_3_plus ">
-                        <h2></h2>
-                        <h3></h3>
-                        <span></span>
-                        <p></p>
-                        <button></button>
+                    <div class="col_3_plus card_white ">
+                        <h2>03</h2>
+                        <h3>Amazing Result</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quam temporibus, modi qui rerum vero obcaecati provident, nisi ea molestiae unde quae libero veritatis a!</p>
+                        <button>more</button>
                     </div>
 
-                    <div class="col_3_plus ">
-                        <h2></h2>
-                        <h3></h3>
-                        <span></span>
-                        <p></p>
-                        <button></button>
+                    <div class="col_3_plus card_white ">
+                        <h2>04</h2>
+                        <h3>Best Pricing</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quam temporibus, modi qui rerum vero obcaecati provident, nisi ea molestiae unde quae libero veritatis a!</p>
+                        <button>more</button>
                     </div>
 
-                    <div class="col_3_plus ">
-                        <h2></h2>
-                        <h3></h3>
-                        <span></span>
-                        <p></p>
-                        <button></button>
+                    <div class="col_3_plus card_white ">
+                        <h2>05</h2>
+                        <h3>Innovations</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quam temporibus, modi qui rerum vero obcaecati provident, nisi ea molestiae unde quae libero veritatis a!</p>
+                        <button>more</button>
                     </div>
 
-                    <div class="col_3_plus ">
-                        <h2></h2>
-                        <h3></h3>
-                        <span></span>
-                        <p></p>
-                        <button></button>
+                    <div class="col_3_plus card_white ">
+                        <h2>06</h2>
+                        <h3>24/7 Support</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quam temporibus, modi qui rerum vero obcaecati provident, nisi ea molestiae unde quae libero veritatis a!</p>
+                        <button>more</button>
                     </div>
+
+                
 
                 
                 </div>
@@ -119,14 +169,15 @@
 
         <section class="about_us container">
             <div class="row">
-                <div class="col_8">
-                    <p></p>
-                    <p></p>
+                <div class="col_8 about_text">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, harum? Id voluptatem debitis voluptate. Illum praesentium, animi quibusdam dolor aut molestias minus at natus tempora cupiditate repellat distinctio sint, temporibus quisquam? Reiciendis nesciunt, vero natus a perspiciatis consectetur velit quos, non est totam molestias soluta expedita repudiandae exercitationem. Nisi autem corrupti distinctio voluptatibus pariatur optio, aperiam nostrum deserunt eos dolorum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quae, excepturi eum architecto odit incidunt veniam quasi libero saepe vel placeat. Possimus dicta consequuntur magnam. Maiores totam perferendis voluptatem illum omnis facere neque! Quam cupiditate tenetur quidem voluptatum obcaecati reprehenderit.</p>
             </div>
-                <div class="col_3_plus">
+                <div class="col_3_plus about_img">
                     <img src="./img/about.jpg" alt="">
-                    <p></p>
-                    <button></button>
+                    <p>I help companies tincidunt tortor aliquam nulla fecilisi cras fermentum odio.</p>
+                    <button> <i class="fa-brands fa-linkedin"></i> Find me on linkedin</button>
                 </div>
             </div>
         </section>
@@ -138,7 +189,7 @@
              <h2>It's Free</h2>
              <p>We're still in beta and we will be for awhile. As we add more <br> functionality, we'll look into other plans with more controls.</p>
              <button>Get Started</button><br>
-             <span>Copyright 2021 Boolean - Classe XX - <a href="#">Privacy policy</a></span>
+             <span class="copyright">Copyright 2021 Boolean • Classe XX • <a href="#">Privacy policy</a></span>
            </section>
         </div>
     </main>
@@ -146,7 +197,7 @@
     <footer>
        <div class="container_xsm">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ad magni ducimus perferendis et earum, tempore nihil.</p> <br>
-         <p><a href="#">Lorem ipsum</a>  dolor sit amet, consectetur <a href="#"> Boolean <br> careers</a></p>
+         <p class="boolean"><a href="#">Lorem ipsum</a>  dolor sit amet, consectetur <a href="#"> Boolean <br> careers</a></p>
        </div>
     </footer>
 </body>

@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
 .container{
     width: 70%;
     margin: auto;
@@ -38,35 +42,43 @@
         height: 60px;
      } */
 
-     .debug .col_8, .debug .col_3_plus{
+     /* .debug .col_8, .debug .col_3_plus{
         height: 350px;
         
-    }
+    } */
 
-    .debug .col_6{
+   /*  .debug .col_6{
         background-color: red;
         height: 300px;
-    }
+    } */
     
-   .debug .card{
+   /* .debug .card{
 
     border: 1px solid black;
     border-radius: 1rem;
     padding: 5vh;
-   }
+   } */
     
-   .debug .foto_partner, .debug .testo_partner{
-    height: 50px;
-    background-color: #000;
+   /* .debug .foto_partner, .debug .testo_partner{
+    height: 50px;   
+    }
+    background-color: #000; */
 
-    
-   }
 /* #endregion DEBUG */
 
 /* #region HEADER */
 header{
     background-color: var(--secondary);
     margin-bottom: 5vh;
+}
+
+header .mobile_nav{
+    display: none;
+}
+
+.mobile_nav i{
+    color: white;
+    font-size: 11vh;
 }
 
 header nav{
@@ -77,7 +89,7 @@ header nav{
 }
 
 .logo{
-    height: 6vh;
+    height: 11vh;
 }
 
 .get_started{
@@ -90,6 +102,11 @@ header nav{
 
 .main_menu{
     display: inline-block;
+    color: white;
+}
+
+.main_menu span{
+    padding-right: 2vw;
 }
 /* #endregion HEADER */
 
@@ -99,14 +116,62 @@ header nav{
     margin-bottom: 5vh;
 }
 
+.demo p{
+    line-height: 4vh;
+    font-weight: bold;
+    color: #657b8e;
+}
+
+.demo h2{
+    color: var(--secondary);
+    padding-bottom: 3vh;
+}
 
 
-.demo .col_8, .debug .col_3_plus{
+.demo button{
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 3vh;
+  border-radius: 1rem;
+  border: 0;
+}
+
+.demo img{
+    width: 45%;
+    padding-top: 2vh;
+}
+
+.demo_text{
+    padding-left: 2vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+
+}
+
+.demo_application{
+    display: flex;
+    justify-content: space-between;
+}
+
+.demo .col_8, .demo .col_3_plus{
     background-color: var(--secondary-soft);
-    border: 1px solid black;
     border-radius: 1rem;
     margin-bottom: 2vh;
+
 }
+
+.clean_code{
+    text-align: center;
+    padding: 3vh 2vw  ;
+}
+
+.clean_code i{
+    font-size: 8vh;
+    padding-bottom: 3vh;
+    color: var(--secondary);
+}
+
 
 
 .row {
@@ -121,11 +186,85 @@ header nav{
     margin-bottom: 5vh;
 }
 
+.planning img{
+    width: 100%;
+    padding-top: 3vh;
+}
+
+.planning h2{
+    margin-top:10vh ;
+    margin-bottom: 3vh;
+    color: white;
+}
+
+.planning p{
+    line-height: 5vh;
+    color: white;
+    padding-bottom: 3vh;
+}
+
+.background_white{
+    background-color: white;
+    border: 0;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-top: 20vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-left: 2vw;
+    text-align: center;
+
+}
+
+.background_white p{
+    color: black;
+    font-size: 0.8rem;
+    line-height: 4vh;
+    margin-top: 3vh;
+}
+
+.background_white button{
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 50%;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 3vh;
+    
+}
+
+
+.partners h3{
+    margin: 3vh 0;
+    color: var(--primary);
+    font-size: 1.5rem;
+
+}
 
 .card{
     background-color: var(--primary);
     margin-top: 5vh;
+    text-align: left;
+    border-radius: 2.5rem;
 }
+
+.card img{
+   max-width: 100% ;
+    border-radius: 4rem;
+    padding: 4vh 2vw;
+}
+
+.card p{
+    padding-top:5vh ;
+    padding-bottom: 2vh;
+    color: white ;
+}
+
+.card .name{
+    color: white;
+    font-weight: bold;
+}
+
+
 
 .partners{
     text-align: center;
@@ -147,18 +286,80 @@ header nav{
     padding-bottom: 5vh;
 }
 
-.about_us{
-    margin-top: 5vh;
-}
-.about_us .col_8{
-    background-color: var(--secondary-soft);
-    border: 1px solid black;
+.card_white{
+    background-color: white;
+    color: var(--primary);
+    text-align: left;
+    padding: 0 2vw;
     border-radius: 1rem;
+    margin-bottom: 3vh;
+}
+
+.card_white h2{
+    font-size: 3rem;
+}
+
+.card_white h3{
+    font-size: 1rem;
+}
+
+.card_white p{
+    color: var(--darker);
+    font-size: 0.6rem;
+    margin-top: 2vh;
+    line-height: 3vh;
     margin-bottom: 2vh;
 }
 
+.card_white button{
+    margin-bottom: 2vh;
+    padding: 0.5rem 2rem;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 1rem;
+    font-size: 0.5rem;
+    color: white;
+}
+
+
+.about_us{
+    margin-top: 5vh;
+}
+
+.about_us h2{
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 3vh;
+}
+
+.about_text p{
+    font-size: 0.7rem;
+    margin-bottom: 3vh;
+    line-height: 5vh;
+}
+
+.about_img{
+    padding: 0 2vw;
+}
+
+.about_img p{
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+
+.about_img button{
+    background-color: var(--primary);
+    color: white;
+    font-size: 0.6rem;
+    padding: 0.3rem 1rem;
+    border: 0;
+    border-radius: 1rem;
+
+}
+
 .about_us img{
-    height: 25vh;
+    height: 30vh;
     border-radius: 6rem ;
     border: 1px solid white;
 }
@@ -167,6 +368,48 @@ header nav{
     padding: 5vh 0;
     text-align: center;
     line-height: 5vh;
+    color: white;
+}
+
+.call_to_action span{
+  font-size: 0.7rem;
+  margin-bottom: 3vh;
+
+}
+
+.call_to_action h3{
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+}
+
+.call_to_action h2{
+    color: var(--accent);
+    font-size: 3rem;
+    margin-bottom: 5vh;
+}
+
+.call_to_action p{
+    font-size: 0.6rem;
+    margin-bottom: 3vh;
+}
+
+.call_to_action button{
+    background-color: white;
+    color: var(--primary);
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border: 0;
+    border-radius: 2rem;
+    margin-bottom: 3vh;
+}
+
+.call_to_action .copyright{
+    font-size: 0.5rem;
+}
+
+.copyright a{
+    color: white;
 }
 
 .background_primary_action{
@@ -182,6 +425,7 @@ header nav{
     padding: 5vh 0;
     text-align: center;
     color: white;
+    font-size: 0.6rem;
  }
 
  footer a{
@@ -192,7 +436,14 @@ header nav{
  a:hover{
     text-decoration: underline;
  }
+
+ .boolean{
+    margin-top:5vh;
+ }
+
+
 /* #endregion FOOTER */
+
 /* #region DIVISIONI IN COLONNA */
      .col_1{
         width: calc(100% / 12 * 1);
@@ -252,6 +503,21 @@ header nav{
 
 /* #region RESPONSIVE */
 
+@media screen and (max-width: 768px){
+    header .main_menu{
+       display: none;
+    }
+
+    header .mobile_nav{
+        display: inline-block;
+    }
+
+    .container_tablet{
+        width: 90%;
+        margin: auto;
+    }
+
+}
 
 
 /* #endregion RESPONSIVE */
