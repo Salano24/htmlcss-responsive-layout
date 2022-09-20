@@ -519,7 +519,12 @@ header nav{
         width: 95%;
         margin: auto;
     }
-
+     .card{
+        text-align: center;
+        padding-bottom: 5vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+     }
     .demo_application{
         display: flex;
         flex-direction: column;
@@ -632,7 +637,8 @@ header nav{
    }
 
     .card{
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
+
    }
 
    .col_12_tablet{
